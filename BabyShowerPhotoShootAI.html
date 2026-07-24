@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Baby Shower Photo Shoot AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FBF6F0;
+    --paper:#FFFFFF;
+    --ink:#2B2521;
+    --ink-soft:#645A52;
+    --blush:#E7B7B4;
+    --gold:#B08A4E;
+    --gold-line: rgba(176,138,78,0.35);
+    --sage:#8B9885;
+    --max-w: 1160px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--gold);}
+
+  ::selection{ background:var(--blush); color:var(--ink); }
+
+  /* ---------- Ornamental corner frame (signature element) ---------- */
+  .corner{
+    position:absolute;
+    width:26px; height:26px;
+    border:1.5px solid var(--gold);
+    opacity:0.55;
+  }
+  .corner.tl{ top:0; left:0; border-right:none; border-bottom:none; }
+  .corner.tr{ top:0; right:0; border-left:none; border-bottom:none; }
+  .corner.bl{ bottom:0; left:0; border-right:none; border-top:none; }
+  .corner.br{ bottom:0; right:0; border-left:none; border-top:none; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    padding: 8rem 1.5rem 6rem;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(231,183,180,0.35), transparent 70%);
+    pointer-events:none;
+  }
+  .hero-frame{
+    position:relative;
+    max-width:640px;
+    margin:0 auto;
+    padding: 3.2rem 2.5rem;
+  }
+  .hero-frame .corner{ width:34px; height:34px; opacity:0.85;}
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-size:0.72rem;
+    color:var(--gold);
+    font-weight:500;
+    margin-bottom:1.4rem;
+  }
+  .eyebrow::before{ content:"— "; }
+  .eyebrow::after{ content:" —"; }
+  h1.title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    line-height:1.05;
+    margin:0 0 1rem;
+    color:var(--ink);
+  }
+  h1.title em{ font-style:italic; color:var(--gold); }
+  .subtitle{
+    font-size:1rem;
+    color:var(--ink-soft);
+    max-width:440px;
+    margin:0 auto;
+  }
+  .updated{
+    display:inline-block;
+    margin-top:1.6rem;
+    font-size:0.82rem;
+    letter-spacing:0.04em;
+    color:var(--ink-soft);
+    border-top:1px solid var(--gold-line);
+    padding-top:1rem;
+  }
+
+  /* ---------- Layout ---------- */
+  .wrap{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:0 1.5rem 6rem;
+    display:grid;
+    grid-template-columns: 260px 1fr;
+    gap: 3.5rem;
+    align-items:start;
+  }
+
+  nav.toc{
+    position:sticky;
+    top:2.5rem;
+    padding: 1.8rem 1.6rem;
+    background:var(--paper);
+    border:1px solid var(--gold-line);
+  }
+  nav.toc h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.15rem;
+    font-weight:600;
+    margin:0 0 1rem;
+    color:var(--ink);
+  }
+  nav.toc ol{
+    list-style:none;
+    margin:0; padding:0;
+    counter-reset:toc;
+  }
+  nav.toc li{
+    counter-increment:toc;
+    margin-bottom:0.65rem;
+  }
+  nav.toc a{
+    display:flex;
+    gap:0.6rem;
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:0.86rem;
+    line-height:1.4;
+    transition:color 0.2s ease;
+  }
+  nav.toc a::before{
+    content: counter(toc, decimal-leading-zero);
+    font-family:'Cormorant Garamond', serif;
+    color:var(--gold);
+    font-weight:600;
+    flex-shrink:0;
+  }
+  nav.toc a:hover{ color:var(--ink); }
+
+  main{ min-width:0; }
+
+  section.clause{
+    position:relative;
+    padding: 2.4rem 2.6rem;
+    margin-bottom: 1.6rem;
+    background:var(--paper);
+    border:1px solid var(--gold-line);
+  }
+  section.clause .num{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    color:var(--blush);
+    font-size:1rem;
+    -webkit-text-stroke: 0.5px var(--gold);
+    display:block;
+    margin-bottom:0.3rem;
+  }
+  section.clause h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:1.7rem;
+    margin: 0 0 1rem;
+    color:var(--ink);
+  }
+  section.clause h3{
+    font-family:'Jost', sans-serif;
+    font-weight:600;
+    font-size:0.95rem;
+    letter-spacing:0.02em;
+    color:var(--gold);
+    margin: 1.2rem 0 0.5rem;
+  }
+  section.clause p{ margin:0 0 0.9rem; color:var(--ink); }
+  section.clause ul{ margin:0 0 0.9rem; padding-left:1.2rem; }
+  section.clause li{ margin-bottom:0.4rem; }
+  section.clause p:last-child, section.clause ul:last-child{ margin-bottom:0; }
+
+  .notice{
+    border-left:3px solid var(--gold);
+    background: rgba(176,138,78,0.06);
+    padding: 0.9rem 1.2rem;
+    font-size:0.92rem;
+    color:var(--ink-soft);
+    margin: 0.9rem 0;
+  }
+  .notice strong{ color:var(--ink); }
+
+  strong.na{ color:var(--ink); }
+
+  .contact-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.4rem;
+    margin-top:1rem;
+  }
+  .contact-item{
+    display:flex;
+    align-items:center;
+    gap:0.6rem;
+    font-size:0.92rem;
+    color:var(--ink);
+  }
+  .contact-item a{ color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold-line); }
+
+  footer{
+    text-align:center;
+    padding: 3rem 1.5rem 4rem;
+    color:var(--ink-soft);
+    font-size:0.82rem;
+    letter-spacing:0.02em;
+  }
+  footer .rule{
+    width:52px; height:1px;
+    background:var(--gold);
+    margin: 0 auto 1.2rem;
+    opacity:0.6;
+  }
+
+  @media (max-width: 880px){
+    .wrap{ grid-template-columns: 1fr; }
+    nav.toc{ position:static; }
+    section.clause{ padding: 1.8rem 1.4rem; }
+    .hero{ padding: 5rem 1.2rem 3.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-frame">
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span>
+    <div class="eyebrow">Baby Shower Photo Shoot AI</div>
+    <h1 class="title">Privacy <em>Policy</em></h1>
+    <p class="subtitle">How we care for your details and your photographs, from upload to output.</p>
+    <div class="updated">Last Updated — 24 July 2026</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Information We Collect</a></li>
+      <li><a href="#s2">Purpose of Collection</a></li>
+      <li><a href="#s3">Image Processing &amp; Storage</a></li>
+      <li><a href="#s4">Data Retention</a></li>
+      <li><a href="#s5">Data Sharing</a></li>
+      <li><a href="#s6">Security Measures</a></li>
+      <li><a href="#s7">Your Rights</a></li>
+      <li><a href="#s8">Children's Privacy</a></li>
+      <li><a href="#s9">Third-Party Services</a></li>
+      <li><a href="#s10">Policy Changes</a></li>
+      <li><a href="#s11">Governing Law</a></li>
+      <li><a href="#s12">Contact</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <p style="max-width:60ch;color:var(--ink-soft);margin-bottom:2rem;">
+      Baby Shower Photo Shoot AI ("Application", "App", "we", "our", "us") respects your privacy
+      and is committed to protecting your personal data. This Privacy Policy explains how we
+      collect, use, store, disclose, and safeguard your information when you use our mobile
+      application, website, and related services. By accessing or using the Application, you
+      agree to the collection and use of information in accordance with this Privacy Policy.
+    </p>
+
+    <section class="clause" id="s1">
+      <span class="num">Clause One</span>
+      <h2>Information We Collect</h2>
+      <h3>Personal Information</h3>
+      <ul>
+        <li>Name (if provided)</li>
+        <li>Email address</li>
+        <li>Login credentials or authentication data</li>
+      </ul>
+      <h3>Uploaded Content</h3>
+      <ul>
+        <li>Photographs uploaded by you for AI processing</li>
+      </ul>
+      <h3>Technical &amp; Usage Information</h3>
+      <ul>
+        <li>Device information (model, OS, app version)</li>
+        <li>IP address (masked where possible)</li>
+        <li>Log data and crash analytics</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="s2">
+      <span class="num">Clause Two</span>
+      <h2>Purpose of Data Collection</h2>
+      <p>We collect and use your information solely for legitimate business purposes, including:</p>
+      <ul>
+        <li>Providing AI-powered photo processing services</li>
+        <li>Account authentication and security</li>
+        <li>Improving app performance and user experience</li>
+        <li>Processing in-app purchases</li>
+        <li>Legal compliance and fraud prevention</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="s3">
+      <span class="num">Clause Three</span>
+      <h2>Image Processing &amp; Storage</h2>
+      <p>Uploaded images are used exclusively for AI-based processing requested by the user.
+      We do not publicly display, sell, or distribute your images.</p>
+      <div class="notice">
+        <strong>Important Notice:</strong> We do not verify ownership, identity, or consent
+        related to uploaded images. Users are solely responsible for ensuring lawful usage
+        and necessary permissions.
+      </div>
+    </section>
+
+    <section class="clause" id="s4">
+      <span class="num">Clause Four</span>
+      <h2>Data Retention</h2>
+      <p>We retain personal data and uploaded content only for as long as necessary to fulfill
+      the purposes outlined in this Privacy Policy, unless a longer retention period is
+      required or permitted by law.</p>
+    </section>
+
+    <section class="clause" id="s5">
+      <span class="num">Clause Five</span>
+      <h2>Data Sharing &amp; Disclosure</h2>
+      <p>We do <strong class="na">not</strong> sell or rent your personal data. Data may be
+      shared only with:</p>
+      <ul>
+        <li>Trusted service providers (cloud storage, payment gateways)</li>
+        <li>AI infrastructure partners strictly for processing purposes</li>
+        <li>Legal or regulatory authorities when required by law</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="s6">
+      <span class="num">Clause Six</span>
+      <h2>Security Measures</h2>
+      <p>We implement reasonable administrative, technical, and organizational safeguards to
+      protect your data. However, no digital transmission or storage method is 100% secure,
+      and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section class="clause" id="s7">
+      <span class="num">Clause Seven</span>
+      <h2>User Rights <span style="font-size:1rem;color:var(--ink-soft);font-family:'Jost',sans-serif;font-weight:400;">(GDPR &amp; DPDP Act – India)</span></h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access your personal data</li>
+        <li>Request correction or deletion</li>
+        <li>Withdraw consent at any time</li>
+        <li>Request data portability (where applicable)</li>
+        <li>Grievance redressal under applicable laws</li>
+      </ul>
+      <p>Requests may be submitted via the contact details below.</p>
+    </section>
+
+    <section class="clause" id="s8">
+      <span class="num">Clause Eight</span>
+      <h2>Children's Privacy</h2>
+      <p>The Application is not intended for individuals under 18 years of age. We do not
+      knowingly collect personal data of minors.</p>
+    </section>
+
+    <section class="clause" id="s9">
+      <span class="num">Clause Nine</span>
+      <h2>Third-Party Services</h2>
+      <p>The Application may use third-party services for analytics or payments. We are not
+      responsible for the privacy practices of external services.</p>
+    </section>
+
+    <section class="clause" id="s10">
+      <span class="num">Clause Ten</span>
+      <h2>Changes to This Privacy Policy</h2>
+      <p>We reserve the right to update this Privacy Policy at any time. Continued use of the
+      Application constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <section class="clause" id="s11">
+      <span class="num">Clause Eleven</span>
+      <h2>Governing Law</h2>
+      <p>This Privacy Policy shall be governed by and construed in accordance with the laws
+      of India.</p>
+    </section>
+
+    <section class="clause" id="s12">
+      <span class="num">Clause Twelve</span>
+      <h2>Contact Information</h2>
+      <p>If you have any questions, concerns, or data-related requests, please contact:</p>
+      <div class="contact-box">
+        <div class="contact-item">✉ <a href="mailto:rcpatel808@gmail.com">rcpatel808@gmail.com</a></div>
+      </div>
+      <div class="notice" style="margin-top:1.4rem;">
+        <strong>Legal Disclaimer:</strong> Users are solely responsible for ensuring that
+        uploaded content does not violate privacy, consent, copyright, or applicable laws.
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="rule"></div>
+  © Baby Shower Photo Shoot AI. All rights reserved.
+</footer>
+
+</body>
+</html>
